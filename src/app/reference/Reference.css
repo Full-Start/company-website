@@ -1,0 +1,103 @@
+.reference-bg {
+  height: 500px;
+  background: url('/bg.jpg') no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+}
+
+.reference-text {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  margin-top: 100px;
+}
+
+.reference-title {
+  font-size: 2.5rem !important;
+  margin-bottom: 3rem;
+  margin-left: 660px;
+  margin-top: 100px;
+  font-size: 350% !important;
+}
+
+
+.reference-desc {
+  font-size: 1.25rem;
+  margin-left: 360px;
+  font-weight: 600;
+  font-size: 135%;
+}
+
+.line-box-reference {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 0 50px;
+}
+
+.reference-box,
+.reference-box-1 {
+  width: 400px;
+  border: 1px solid #bebebe;
+  border-radius: 5px;
+  background: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+  margin-bottom: 200px;
+}
+
+.reference-box:hover,
+.reference-box-1:hover {
+  transform: translateY(-10px);
+}
+
+.reference-title,
+.reference-title-1 {
+  font-size: xx-large;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0;
+}
+
+
+.icon {
+  font-size: 5rem;
+  margin-bottom: 10px;
+  margin-left: 150px;
+}
+
+.menu li {
+  padding-right: 2rem;
+  padding-bottom: 0px;
+  font-weight: 600;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 62px;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 2px solid #c10000;
+  padding: 10px;
+  display: none;
+  min-width: 200px;
+  z-index: 1;
+  margin-top: 10px;
+}

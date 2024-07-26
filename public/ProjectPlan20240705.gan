@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2024-06-01" view-index="0" gantt-divider-location="1491" resource-divider-location="355" version="3.3.3309" locale="en_TH">
+    <description/>
+    <view zooming-state="default:11" id="gantt-chart">
+        <field id="tpd3" name="Name" width="670" order="0"/>
+        <field id="tpd4" name="Begin date" width="85" order="1"/>
+        <field id="tpd5" name="End date" width="85" order="2"/>
+        <field id="tpd13" name="Resources" width="635" order="3"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+        <timeline><![CDATA[1,2,0]]></timeline>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="334" order="0"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="3" uid="fdd78b57cfeb45bba86393553222fd8a" name="Phase 1 Project planning" meeting="false" project="true" start="2024-06-27" duration="13" complete="30" expand="true">
+            <task id="0" uid="0398e4a23bc04ad299c63accf68e679a" name="ประชุมรวบรวมข้อมูลขอบเขตงาน" meeting="false" start="2024-06-27" duration="1" complete="100" priority="2" expand="true">
+                <depend id="1" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="1" uid="ce005d12d3c54824b43d771396ad4c5a" name="วิเคราะห์, ออกแบบ และ วางแผนดำเนินงาน" meeting="false" start="2024-06-28" duration="3" complete="100" expand="true">
+                <depend id="2" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="2" uid="35e20c367b5d46719e8afc277fdb7082" name="ร่างเอกสารนำเสนอแผนดำเนินงาน" meeting="false" start="2024-07-03" duration="3" complete="0" expand="true">
+                <depend id="14" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="14" uid="dc42e0a7a0ed434abef2d6994c89fd53" name="จัดทำเอกสารวิธีการดำเนินการ (Methodology)" meeting="false" start="2024-07-08" duration="1" complete="0" expand="true">
+                <depend id="15" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="15" uid="4cd0300337394cfc8c4a2d8de44a908f" name="จัดทำแผนการดำเนินงาน (Project Plan)" meeting="false" start="2024-07-09" duration="1" complete="0" expand="true">
+                <depend id="16" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="16" uid="487a63f9ee694fce8eb2005793978f21" name="วางโครงสร้างองค์กรในการดำเนินโครงการ (Project organization structure)" meeting="false" start="2024-07-10" duration="1" complete="0" expand="true">
+                <depend id="17" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="17" uid="22870abe04f147809f788580b0601ae7" name="กำหนดรายชื่อบุคลากรหลัก (Key Person)" meeting="false" start="2024-07-11" duration="1" complete="0" expand="true">
+                <depend id="18" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="18" uid="4c9af74c3e7d4dacb9a69a0e2f1edcd0" name="สรุปรายการสิ่งส่งมอบ (Deliverables)" meeting="false" start="2024-07-12" duration="1" complete="0" expand="true">
+                <depend id="4" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="4" uid="288c7499c47c41e1bccebd2e69ad0b1a" name="จัดประชุมเปิดโครงการ" meeting="false" start="2024-07-15" duration="1" complete="0" expand="true">
+                <depend id="8" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="5" uid="d49a7c0d705543fba17c5c53af42ee26" name="Phase 2 ส่งมอบ Hardware และ จัดทำระบบฐานข้อมูลน้ำฝน" meeting="false" project="true" start="2024-06-27" duration="60" complete="11" expand="true">
+            <depend id="19" type="2" difference="0" hardness="Strong"/>
+            <depend id="20" type="2" difference="0" hardness="Strong"/>
+            <depend id="21" type="2" difference="0" hardness="Strong"/>
+            <task id="6" uid="97561dd25e134df7a5bdf73dbc11c5f8" name="Phase 2.1 Setup and Installation Hardware และ นำเสนอรายละเอียดคุณลักษณะเฉพาะตามภาคผนวก ข ใน TOR" meeting="false" start="2024-06-27" duration="60" complete="20" expand="true"/>
+            <task id="7" uid="1794647c2b0b47e8b5bc39ef7312f9f6" name="Phase 2.2 เอกสารสรุปความต้องการของระบบ และ Mock-up ฐานข้อมูลน้ำฝน" meeting="false" start="2024-07-16" duration="41" complete="0" expand="true">
+                <task id="8" uid="b268022153234e9e9c082808a8a73e52" name="ออกแบบโครงสร้างเว็บฐานข้อมูลน้ำฝน" meeting="false" start="2024-07-16" duration="25" complete="0" expand="true">
+                    <depend id="10" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="10" uid="0da0b0d3ed8e4519a7d2eac93d397b2e" name="จัดทำ Mock-up เพื่อยืนยันความถุกต้อง" meeting="false" start="2024-08-20" duration="15" complete="0" expand="true">
+                    <depend id="13" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="13" uid="7e091a68398b47b0babe208bee63b39d" name="พัฒนาและปรับปรุงระบบเชื่อมโยงข้อมูลสถานีโทรมาตร" meeting="false" start="2024-09-10" duration="1" complete="0" expand="true">
+                    <depend id="9" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="9" uid="9b23a0d1d58b4f99adc98c2f83a3f375" name="ส่งมอบงาน และ จัดประชุมความคืบหน้าของโครงการ" meeting="false" start="2024-09-11" duration="1" complete="0" priority="2" expand="true"/>
+        </task>
+        <task id="12" uid="8aabadb6f9784898a7c64cb08ed9e15b" name="Phase 3 ปรับปรุงข้อมูลน้ำฝนให้เป็นปัจจุบัน" meeting="false" project="true" start="2024-09-19" duration="43" complete="0" expand="true">
+            <depend id="24" type="2" difference="0" hardness="Strong"/>
+            <task id="19" uid="20b5fee14c4a429a87179a811efd5784" name="รวบรวม และ ปรับปรุงข้อมูลสถานีตรวจวัดน้ำฝน" meeting="false" start="2024-09-19" duration="22" complete="0" expand="true">
+                <depend id="22" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="20" uid="503c8f00b7a74a06b2a6c61be91beca2" name="ปรับปรุง และ พัฒนาระบบฐานข้อมูลน้ำท่า" meeting="false" start="2024-09-19" duration="42" complete="0" expand="true">
+                <depend id="22" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="21" uid="a3a6d9141cca446a914341c05ab84f90" name="พัฒนาระบบตรวจสอบและนำเข้าข้อมูลน้ำฝน" meeting="false" start="2024-09-19" duration="42" complete="0" expand="true">
+                <depend id="22" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="22" uid="fab85249a7d244248368c53a92b5640f" name="จัดประชุมความคืบหน้าโครงการ" meeting="false" start="2024-11-18" duration="1" complete="0" expand="true"/>
+        </task>
+        <task id="23" uid="6824f5bf08c8489bb3ed265d30d40991" name="Phase 4 ย้ายข้อมูลจากฐานข้อมูลเก่ามายังฐานข้อมูลที่พัฒนาใหม่" meeting="false" project="true" start="2024-11-19" duration="68" complete="0" expand="true">
+            <depend id="36" type="2" difference="0" hardness="Strong"/>
+            <depend id="37" type="2" difference="0" hardness="Strong"/>
+            <task id="24" uid="95a785d0168a4ab4a2102541ac1d7ef9" name="จัดทำผลการวิเคราะห์ข้อมูลน้ำฝน" meeting="false" start="2024-11-19" duration="5" complete="0" expand="true">
+                <depend id="25" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="25" uid="59a75180b5654dd39f699df7250014ee" name="แสดงผลและส่งออกรายงานในรูปแบบ .xlsx, .txt และ กราฟ" meeting="false" start="2024-11-26" duration="2" complete="0" expand="true">
+                <depend id="26" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="26" uid="b078a7d6757f4a25bfa115ce5f7139d4" name="จัดทำระบบการบริการข้อมูลผ่าน API" meeting="false" start="2024-11-28" duration="5" complete="0" expand="true">
+                <depend id="27" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="27" uid="e4756227b10d469a9d22a1abf1273a58" name="จัดทำระบบกำหนดสิทธิผู้ใช้งานและการเข้าถึงข้อมูล" meeting="false" start="2024-12-05" duration="5" complete="0" expand="true">
+                <depend id="28" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="28" uid="2f753183231e4aaa9650c5cca5c49c84" name="จัดทำระบบแจ้งเตือนการนำเข้าข้อมูล การรับ-ส่งข้อมูล และ การแก้ไขข้อมูล" meeting="false" start="2024-12-12" duration="5" complete="0" expand="true">
+                <depend id="29" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="29" uid="2de16c99acd940f0a4e9ee6a84297b01" name="จัดทำหน้าเว็บแสดงผล และ เปรียบเทียบช้อมูลของแต่ละสถานี" meeting="false" start="2024-12-19" duration="10" complete="0" expand="true">
+                <depend id="30" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="30" uid="c13450785495463bbd0bc6216322e6c2" name="ดำเนินการย้ายฐานข้อมูลจากฐานข้อมูลเดิมมายังฐานข้อมูลที่พัฒนาใหม่" meeting="false" start="2025-01-02" duration="5" complete="0" expand="true">
+                <depend id="31" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="31" uid="5952c76d89fa4e16b71ce1153c275176" name="พัฒนาและปรับปรุงระบบเชื่อมโยงข้อมูลสถานีโทรมาตร" meeting="false" start="2025-01-09" duration="5" complete="0" expand="true">
+                <depend id="32" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="32" uid="9bebf4890d3c4e848e2215a047affa87" name="จัดทำระบบสำรองข้อมูล และ การกู้คืน พร้อมทั้งตั้งค่าการสำรองข้อมูล" meeting="false" start="2025-01-16" duration="5" complete="0" expand="true">
+                <depend id="33" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="33" uid="b0b1a2280db04559baabbb047592ef4c" name="ทดสอบการใช้งานระบบ" meeting="false" start="2025-01-23" duration="10" complete="0" expand="true">
+                <depend id="34" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="34" uid="cd832158a6e3436d8082760504c8bbd9" name="จัดทำรายงานผลการทดสอบระบบ" meeting="false" start="2025-02-06" duration="10" complete="0" expand="true">
+                <depend id="35" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="35" uid="0a5b4f7cf540424f8a39b6ff803a377b" name="จัดประชุมความคืบหน้าโครงการ" meeting="false" start="2025-02-20" duration="1" complete="0" expand="true"/>
+        </task>
+        <task id="36" uid="469ca75a918e456bab1370447a8c8ad4" name="Phase 5 จัดอบรม" meeting="false" project="true" start="2025-02-21" duration="5" complete="0" expand="true">
+            <task id="37" uid="1ee5686e65c342d694718cab2b61d83d" name="จัดอบรมระดับผู้ควบคุมระบบ (Administrator)" meeting="false" start="2025-02-21" duration="1" complete="0" expand="true">
+                <depend id="38" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="38" uid="109da142ffc94653ac93b6b9166e864c" name="จัดอบรมระดับเจ้าหน้าที่นำเข้าข้อมูล" meeting="false" start="2025-02-24" duration="1" complete="0" expand="true">
+                <depend id="39" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="39" uid="6bb04ef540504f7b9bba7abd7ef7eaed" name="จัดอบรมระดับผู้ใช้งานทั่วไป" meeting="false" start="2025-02-25" duration="2" complete="0" expand="true">
+                <depend id="40" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="40" uid="26ea6191d9e147d29f8e135de4df13a8" name="จัดประชุมความคืบหน้าและปิดโครงการ" meeting="false" start="2025-02-27" duration="1" complete="0" expand="true"/>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="18" name="RID Hydrology" function="9" contacts="" phone=""/>
+        <resource id="19" name="RID Inspection committee" function="10" contacts="" phone=""/>
+        <resource id="20" name="Project Manager" function="Default:0" contacts="" phone=""/>
+        <resource id="21" name="Project Coordinator" function="Default:0" contacts="" phone=""/>
+        <resource id="22" name="Database Admin" function="Default:0" contacts="" phone=""/>
+        <resource id="23" name="IT Specialist" function="Default:0" contacts="" phone=""/>
+        <resource id="24" name="System Analysis" function="Default:0" contacts="" phone=""/>
+        <resource id="25" name="Developer" function="Default:0" contacts="" phone=""/>
+        <resource id="26" name="System Integrator" function="Default:0" contacts="" phone=""/>
+        <resource id="27" name="Tester" function="Default:0" contacts="" phone=""/>
+        <resource id="28" name="Data Entry" function="Default:0" contacts="" phone=""/>
+        <resource id="29" name="Trainer" function="Default:0" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="0" resource-id="18" function="9" responsible="false" load="100.0"/>
+        <allocation task-id="4" resource-id="18" function="9" responsible="false" load="100.0"/>
+        <allocation task-id="8" resource-id="18" function="9" responsible="false" load="100.0"/>
+        <allocation task-id="10" resource-id="18" function="9" responsible="false" load="100.0"/>
+        <allocation task-id="9" resource-id="18" function="9" responsible="false" load="100.0"/>
+        <allocation task-id="19" resource-id="18" function="9" responsible="false" load="100.0"/>
+        <allocation task-id="20" resource-id="18" function="9" responsible="false" load="100.0"/>
+        <allocation task-id="21" resource-id="18" function="9" responsible="false" load="100.0"/>
+        <allocation task-id="22" resource-id="18" function="9" responsible="false" load="100.0"/>
+        <allocation task-id="34" resource-id="18" function="9" responsible="false" load="100.0"/>
+        <allocation task-id="35" resource-id="18" function="9" responsible="false" load="100.0"/>
+        <allocation task-id="37" resource-id="18" function="9" responsible="false" load="100.0"/>
+        <allocation task-id="38" resource-id="18" function="9" responsible="false" load="100.0"/>
+        <allocation task-id="39" resource-id="18" function="9" responsible="false" load="100.0"/>
+        <allocation task-id="40" resource-id="18" function="9" responsible="false" load="100.0"/>
+        <allocation task-id="4" resource-id="19" function="10" responsible="false" load="100.0"/>
+        <allocation task-id="9" resource-id="19" function="10" responsible="false" load="100.0"/>
+        <allocation task-id="22" resource-id="19" function="10" responsible="false" load="100.0"/>
+        <allocation task-id="35" resource-id="19" function="10" responsible="false" load="100.0"/>
+        <allocation task-id="0" resource-id="20" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="15" resource-id="20" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="16" resource-id="20" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="17" resource-id="20" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="4" resource-id="20" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="9" resource-id="20" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="22" resource-id="20" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="35" resource-id="20" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="0" resource-id="21" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="4" resource-id="21" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="9" resource-id="21" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="22" resource-id="21" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="35" resource-id="21" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="1" resource-id="22" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="8" resource-id="22" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="19" resource-id="22" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="30" resource-id="22" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="32" resource-id="22" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="1" resource-id="23" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="13" resource-id="23" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="8" resource-id="23" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="19" resource-id="23" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="1" resource-id="24" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="2" resource-id="24" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="14" resource-id="24" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="15" resource-id="24" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="18" resource-id="24" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="8" resource-id="24" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="10" resource-id="24" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="19" resource-id="24" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="24" resource-id="24" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="34" resource-id="24" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="10" resource-id="25" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="13" resource-id="25" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="19" resource-id="25" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="20" resource-id="25" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="21" resource-id="25" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="24" resource-id="25" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="25" resource-id="25" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="26" resource-id="25" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="27" resource-id="25" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="28" resource-id="25" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="29" resource-id="25" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="31" resource-id="25" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="18" resource-id="26" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="6" resource-id="26" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="9" resource-id="26" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="13" resource-id="27" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="20" resource-id="27" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="21" resource-id="27" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="33" resource-id="27" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="34" resource-id="27" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="40" resource-id="27" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="19" resource-id="28" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="37" resource-id="29" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="38" resource-id="29" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="39" resource-id="29" function="Default:0" responsible="false" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles>
+        <role id="1" name="database specialist"/>
+        <role id="2" name="it specialist"/>
+        <role id="3" name="senior developer"/>
+        <role id="4" name="chief technical officers"/>
+        <role id="5" name="senior system analyst"/>
+        <role id="7" name="data entry operator"/>
+        <role id="8" name="project coordinator"/>
+        <role id="9" name="project owner"/>
+        <role id="10" name="inspection committee"/>
+    </roles>
+</project>

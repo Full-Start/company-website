@@ -1,0 +1,272 @@
+.ourTeam-bg {
+  height: 500px;
+  background: url('/bg.jpg') no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+}
+
+.ourTeam-text {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+}
+
+.ourTeam-title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  margin-left: 560px;
+  margin-top: 200px;
+  font-size: 350%;
+}
+
+.horizontal-line-ourTeam {
+  width: 180px;
+  border-top: 4px solid #ed7e00;
+  margin-left: 140px;
+  margin-bottom: 50px;
+  margin-top: -30px;
+}
+
+.ourTeam-subtitle-desc {
+  font-size: 300%;
+  font-weight: 600;
+  margin-left: 130px;
+  margin-top: 80px;
+}
+
+.ourTeam-desc {
+  font-size: 1.25rem;
+  margin-left: 135px;
+  font-weight: 300;
+  font-size: 130%;
+  margin-top: -5px;
+}
+
+.menu li {
+  padding-right: 2rem;
+  padding-top: 64px;
+  font-weight: 600;
+  height: 35px;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 2px solid #c10000;
+  padding: 10px;
+  display: none;
+  min-width: 200px;
+  z-index: 1;
+  margin-top: 10px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 62px;
+}
+
+.peeKit {
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 2px solid #ed7e00;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+.peeKit-img {
+  margin-right: 20px;
+  width: 500px;
+  height: 400px;
+  margin-left: 100px;
+  margin-top: 80px;
+  position: relative;
+}
+
+.peeKit-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+}
+
+.peeKit-title {
+  margin-bottom: 10px;
+  font-size: 200%;
+  font-weight: 600;
+}
+
+.peeKit-subTitle {
+  margin-bottom: 20px;
+  font-size: large;
+  font-weight: 600;
+}
+
+.horizontal-line-peeKit {
+  width: 125%;
+  position: absolute;
+  height: 1px;
+  margin-top: 300px;
+  margin-left: -350px;
+}
+
+
+.peeTerk {
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 2px solid #ed7e00;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+.peeTerk-img {
+  margin-right: 20px;
+  width: 500px;
+  height: 400px;
+  margin-left: 100px;
+  margin-top: 80px;
+  position: relative;
+}
+
+.peeTerk-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+}
+
+.horizontal-line-peeTerk {
+  width: 125%;
+  position: absolute;
+  height: 1px;
+  margin-top: 300px;
+  margin-left: -350px;
+}
+
+.peeTerk {
+  flex-direction: row-reverse;
+}
+
+
+.peeKit-desc,
+.peeTerk-desc {
+  width: 100%;
+  max-width: 500px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  margin: 0;
+  line-height: 1.5;
+}
+
+
+.peeKit-img {
+  margin-right: 20px;
+  width: 500px;
+  height: 400px;
+  margin-left: 100px;
+  margin-top: 80px;
+  position: relative;
+}
+
+.peeTerk-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+}
+
+.peeTerk-title {
+  margin-bottom: 10px;
+  font-size: 200%;
+  font-weight: 600;
+}
+
+.peeTerk-subTitle {
+  margin-bottom: 20px;
+  font-size: large;
+  font-weight: 600;
+}
+
+.allTeam {
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+.allTeam-title {
+  position: absolute;
+  left: 50%;
+  font-size: xx-large;
+  font-weight: 600;
+  transform: translateX(-50%);
+  padding: 10px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  position: relative;
+}
+
+.allTeam-img {
+  width: 40%;
+  height: 40%;
+  margin-top: 80px;
+}
+
+.allTeam-container {
+  margin: 80px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 1300px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.allTeam-text {
+  text-align: left;
+  padding: 50px;
+  border-radius: 10px;
+  max-width: 600px;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.icon-tester {
+  margin-right: 10px;
+  width: 70px;
+  height: 70px;
+}
+
+.tester-title {
+  margin-left: 20px;
+}
+
+.tester-desc {
+  margin-top: 40px;
+}
+
+
+.icon-programmer {
+  margin-right: 10px;
+  width: 70px;
+  height: 70px;
+  margin-top: 50px;
+}
+
+.programmer-title {
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+.programmer-desc {
+  margin-top: 40px;
+}
