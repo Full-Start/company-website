@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 import '../../../lib/i18n';
 import Image from 'next/image';
-import client from '../../../public/client.jpg';
+import EasyERP from '../../../public/EasyERP.jpg'
 
 function TermsPrivacy() {
     const { t } = useTranslation();
@@ -61,21 +61,21 @@ function TermsPrivacy() {
                     <div className='menu-item'>
                         <Link href="/about/newevents/laTestArticle1" className='menu-item'>
                             <div className='menu-imgContainer'>
-                                <Image src={client} alt="" className='menu-img' />
+                                <Image src={EasyERP} alt="" className='menu-img' />
                             </div>
                             <div className='menu-textContainer'>
                                 <h3 className='menu-postTitle'>
                                     {t('Develop Application Data Asset to help work with accuracy and transparency in every step.')}
                                 </h3>
                                 <div className='menu-detail'>
-                                    <span className='menu-username'>CEO TANG</span>
-                                    <span className='menu-date'>10-03-2024</span>
+                                    <span className='menu-username'>CEO KIT</span>
+                                    <span className='menu-date'>31-07-2024</span>
                                 </div>
                             </div>
                         </Link>
                     </div>
 
-                    <div className='menu-item'>
+                    {/* <div className='menu-item'>
                         <Link href="/about/newevents/laTestArticle2" className='menu-item'>
                             <div className='menu-imgContainer'>
                                 <Image src={client} alt="" className='menu-img' />
@@ -107,7 +107,7 @@ function TermsPrivacy() {
                                 </div>
                             </div>
                         </Link>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <Footer />

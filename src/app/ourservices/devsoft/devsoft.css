@@ -37,7 +37,7 @@
   background: url('/bgSoftware.jpg') no-repeat center center;
   background-size: cover;
   overflow: hidden;
-  position: relative; 
+  position: relative; /* ทำให้ position ของ pseudo-element เป็น relative */
 }
 
 .bg-devSoft::before {
@@ -47,13 +47,13 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); 
+  background: rgba(0, 0, 0, 0.5); /* พื้นหลังดำจางๆ */
   z-index: 1;
 }
 
 .title-devSoft {
   position: relative;
-  z-index: 2; 
+  z-index: 2; /* ให้เนื้อหาขึ้นมาอยู่ข้างหน้า */
 }
 
 .title-devSoft span {
@@ -66,20 +66,20 @@
 .title-devSoft div {
   display: block;
   color: #fff;
-  max-width: 600px; 
-  line-height: 1.5; 
-  font-size: 1rem; 
+  max-width: 600px; /* ปรับความกว้างตามที่ต้องการ */
+  line-height: 1.5; /* ระยะห่างระหว่างบรรทัด */
+  font-size: 1rem; /* ขนาดของตัวอักษร */
 }
 
 .btn-getInTouch {
   margin-left: 5px;
-  height: 40px; 
-  padding: 0 30px; 
-  font-size: 20px;
+  height: 40px; /* เพิ่มความสูงของปุ่ม */
+  padding: 0 30px; /* เพิ่ม padding เพื่อขยายขนาดของปุ่ม */
+  font-size: 20px; /* ขยายขนาดตัวอักษร */
   background: #c10000;
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
+  display: flex; /* ใช้ Flexbox เพื่อจัดการระยะห่างในปุ่ม */
+  align-items: center; /* จัดแนวตัวอักษรให้อยู่กลางแนวตั้ง */
+  justify-content: center; /* จัดแนวตัวอักษรให้อยู่กลางแนวนอน */
   text-decoration: none;
   color: #fff;
   border: 2px solid transparent;
@@ -88,13 +88,14 @@
   text-transform: uppercase;
   margin-top: 30px;
   position: relative;
-  z-index: 2; 
+  z-index: 2; /* ให้เนื้อหาขึ้นมาอยู่ข้างหน้า */
 }
 
 .btn-getInTouch:hover {
   border: 2px solid #c10000;
-  background: #fff; 
-  color: #c10000; 
+  background: #fff; /* เปลี่ยนพื้นหลังเป็นสีขาว */
+  color: #c10000; /* เปลี่ยนตัวอักษรเป็นสีแดง */
+}
 
 
 .devSoft-container {
@@ -115,7 +116,7 @@
 .devSoft-desc {
   font-size: 1rem;
   margin-bottom: 20px;
-  max-width: 800px; 
+  max-width: 800px; /* จำกัดความกว้างของข้อความเพื่อให้ดูดีขึ้น */
   margin-top: 15px;
   font-size: 1rem;
   line-height: 2;
@@ -125,7 +126,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  gap: 20px; 
+  gap: 20px; /* เพิ่มช่องว่างระหว่างช่อง */
   padding: 20px;
 }
 
@@ -136,20 +137,20 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative; 
-  padding: 60px; 
+  position: relative; /* เพิ่มตำแหน่งเพื่อจัดการตำแหน่งของข้อมูลเพิ่มเติม */
+  padding: 60px; /* ลด padding สำหรับช่อง */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  overflow: hidden; 
-  transition: transform 0.3s ease-in-out; 
+  overflow: hidden; /* ซ่อนส่วนเกิน */
+  transition: transform 0.3s ease-in-out; /* เพิ่มการเปลี่ยนแปลงเมื่อ hover */
 }
 
 .grid-item:hover {
-  transform: scale(1.05); 
+  transform: scale(1.05); /* ขยายขนาดของช่องเล็กน้อยเมื่อ hover */
 }
 
 .grid-item .icon {
-  font-size: 50px; 
+  font-size: 50px; /* ขนาดไอคอน */
   margin-bottom: 10px;
 }
 
@@ -165,34 +166,35 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: #c10000; 
+  background: #c10000; /* พื้นหลังสีแดงทึบ */
   color: #fff;
-  opacity: 0;
+  opacity: 0; /* ซ่อนข้อมูลเริ่มต้น */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: opacity 0.3s ease-in-out; 
+  transition: opacity 0.3s ease-in-out; /* การเปลี่ยนแปลงความโปร่งใส */
   padding: 20px;
-  z-index: 1; 
+  z-index: 1; /* ทำให้แน่ใจว่าข้อมูลเพิ่มเติมจะอยู่ด้านบน */
 }
 
 .grid-item:hover .info {
-  opacity: 1; 
+  opacity: 1; /* แสดงข้อมูลเมื่อ hover */
 }
 
+/* Image section styling */
 .image-section {
-  flex: 1; 
+  flex: 1; /* Takes up 50% of the container width */
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
-  box-sizing: border-box; 
+  box-sizing: border-box; /* Includes padding in width calculation */
 }
 
 .sdlc-img {
-  max-width: 60%; 
-  height: auto; 
+  max-width: 60%; /* Ensure the image doesn't exceed its container */
+  height: auto; /* Maintain aspect ratio */
   margin-top: -20px;
 }
 
@@ -242,5 +244,4 @@
   font-size: 16px;
   text-align: center;
   margin-top: 20px;
-}
 }

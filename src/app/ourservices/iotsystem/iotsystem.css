@@ -74,27 +74,38 @@
 
 .heading-large {
   font-size: 36px;
+  /* ขนาดใหญ่สุด */
   font-weight: bold;
+  /* ข้อความตัวหนา */
   margin-bottom: 20px;
+  /* ระยะห่างด้านล่าง */
 }
 
 .heading-medium {
   font-size: 20px;
+  /* ขนาดรองลงมา */
   margin-bottom: 15px;
+  /* ระยะห่างด้านล่าง */
 }
 
 .text-normal {
   font-size: 20px;
+  /* ขนาดเล็กสุด */
   margin-bottom: 10px;
+  /* ระยะห่างด้านล่าง */
   line-height: 1.5;
+  /* ระยะห่างระหว่างบรรทัด */
 }
 
 .IoT-container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  /* ระยะห่างระหว่างกล่อง */
   justify-content: center;
+  /* จัดกึ่งกลางแนวนอน */
   padding: 20px;
+  /* ระยะห่างภายในคอนเทนเนอร์ */
 }
 
 .IoT-box {
@@ -103,26 +114,39 @@
   align-items: center;
   justify-content: center;
   width: calc(50% - 20px);
+  /* กว้างของกล่อง (50% ของคอนเทนเนอร์ - ระยะห่าง) */
   height: 250px;
+  /* สูงของกล่อง */
   border: 1px solid #333;
+  /* ขอบกล่อง */
   border-radius: 10px;
+  /* มุมโค้งมน */
   background-color: #f0f0f0;
+  /* สีพื้นหลัง */
   text-align: center;
   font-size: 14px;
+  /* ขนาดข้อความ */
   color: #333;
+  /* สีข้อความ */
   padding: 20px;
+  /* ระยะห่างภายในกล่อง */
   box-sizing: border-box;
+  /* คำนวณขนาดกล่องรวมถึงขอบและระยะห่าง */
 }
 
 .IoT-icon {
   font-size: 100px;
+  /* ขนาดไอคอน */
   margin-bottom: 10px;
+  /* ระยะห่างด้านล่าง */
 }
 
 .text-IoT-Title {
   font-size: 20px;
+  /* ขนาดข้อความ */
   font-weight: bolder;
   margin: 0;
+  /* ลบระยะห่างภายนอกของข้อความ */
 }
 .text-IoT-desc {
   line-height: 2;
@@ -130,8 +154,11 @@
 
 .IoT-lastTitle {
   font-size: 36px;
+  /* ขนาดใหญ่สุด */
   font-weight: bold;
+  /* ข้อความตัวหนา */
   margin-bottom: 20px;
+  /* ระยะห่างด้านล่าง */
   padding-left: 100px;
   margin-top: 50px;
 
@@ -139,46 +166,71 @@
 
 .IoT-lastBox {
   margin-top: 80px;
+  /* ระยะห่างระหว่างกล่องบน */
   margin-bottom: 40px;
+  /* เพิ่มระยะห่างด้านล่างของคอนเทนเนอร์ */
   margin: 0 auto;
+  /* จัดกล่องกลางหน้า */
   max-width: 1200px;
+  /* กำหนดความกว้างสูงสุดของคอนเทนเนอร์ */
 }
 
 .lastBox {
   display: flex;
+  /* ใช้ Flexbox เพื่อจัดเรียงเนื้อหา */
   align-items: flex-start;
+  /* จัดแนวเนื้อหาในแนวตั้ง */
   gap: 50px;
+  /* ระยะห่างระหว่างไอคอนและข้อความ */
   padding: 20px;
+  /* ระยะห่างภายในกล่อง */
   border: 1px solid #333;
+  /* ขอบกล่อง */
   border-radius: 10px;
+  /* มุมโค้งมน */
   background-color: #f0f0f0;
+  /* สีพื้นหลัง */
   margin-bottom: 30px;
+  /* เพิ่มระยะห่างด้านล่างของกล่อง */
 }
 
 .lastBox-icon {
   font-size: 50px;
+  /* ขนาดไอคอน */
   color: #333;
+  /* สีไอคอน */
 }
 
 .lastBox-title {
   font-size: 18px;
+  /* ขนาดข้อความหัวข้อ */
   font-weight: bolder;
+  /* ตัวหนา */
   margin-bottom: 10px;
+  /* ระยะห่างด้านล่าง */
 }
 
 .lastBox-desc {
   font-size: 14px;
+  /* ขนาดข้อความรายละเอียด */
   color: #333;
+  /* สีข้อความ */
   margin-top: 30px;
+  /* ระยะห่างด้านบน */
   font-weight: 400;
+  /* น้ำหนักตัวอักษร */
   line-height: 1.6;
+  /* ความสูงของบรรทัด */
   word-wrap: break-word;
+  /* ตัดคำเมื่อถึงขอบเขต */
   overflow-wrap: break-word;
   line-height: 2;
-
+  /* ตัดคำเมื่อถึงขอบเขต */
 }
 
 .lastBox-desc span {
   display: block;
+  /* แสดงข้อความในบรรทัดใหม่ */
   margin-bottom: 10px;
+  /* ระยะห่างระหว่างบรรทัด */
 }

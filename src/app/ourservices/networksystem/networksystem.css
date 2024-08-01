@@ -26,7 +26,6 @@
   z-index: 1;
   margin-top: 10px;
 }
-
 .bg-Network {
   display: flex;
   justify-content: center;
@@ -41,11 +40,11 @@
 }
 
 .text-Network {
-  background-color: rgba(255, 255, 255, 0.51);
-  max-width: 1500px;
-  margin: 0 auto;
-  border-radius: 15px;
-  padding: 80px;
+  background-color: rgba(255, 255, 255, 0.51); 
+  max-width: 1500px; /* Adjust the width as needed to make the background wider */
+  margin: 0 auto; /* Center the container if desired */
+  border-radius: 15px; /* Rounded corners */
+  padding: 80px; /* Padding around the text */
 }
 
 .text-Network .title {
@@ -61,8 +60,8 @@
 
 .text-Network .description {
   font-size: 28px;
-  max-width: 800px;
-  line-height: 2;
+  max-width: 800px; 
+  line-height: 2; 
   display: inline-block;
   text-align: center;
   margin-top: 20px;
@@ -73,12 +72,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 50px;
+  padding-top: 50px; /* Adjust as needed for spacing from the top */
 }
 
 .network-header {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 30px; /* Adjust spacing between title/desc and content */
 }
 
 .network-title {
@@ -97,18 +96,18 @@
 
 .network-content {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: center; /* Aligns the content to the top of the container */
+  justify-content: center; /* Aligns the content to the start (left) */
 }
 
 .network-img {
-  max-width: 30%;
+  max-width: 30%; /* Ensures the image is responsive */
   height: auto;
   margin-right: 100px;
 }
 
 .text-exNetwork {
-  max-width: 500px;
+  max-width: 500px; /* Adjust width to control the text wrapping */
   font-size: 16px;
   line-height: 2.6;
 }
@@ -116,66 +115,66 @@
 
 .network-section {
   display: flex;
-  padding: 20px;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  padding: 20px; /* Add padding around the section */
+  flex-direction: row; /* Align items in a row */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
 }
 
 .text-section {
-  max-width: 500px;
-  margin-right: 20px;
+  max-width: 500px; /* Adjust width to control text wrapping */
+  margin-right: 20px; /* Space between text and image */
 }
 
 .title-exNetwork2 {
   font-size: 24px;
   font-weight: bold;
+  margin-bottom: 10px; /* Space between title and text */
+}
+
+.text-exNetwork2 {
+  font-size: 16px;
+  line-height: 2.6;
+  margin-top: 20px;
+}
+
+.network-img2 {
+  max-width: 30%; /* Ensures the image is responsive */
+  height: auto;
+  margin-left: 30px;
+}
+
+.network-box-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* สร้างคอลัมน์ 3 คอลัมน์ */
+  gap: 20px; /* ระยะห่างระหว่างกล่อง */
+  padding: 20px; /* ระยะห่างภายในคอนเทนเนอร์ */
+}
+
+.network-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* ใช้ความกว้างของคอลัมน์ทั้งหมด */
+  height: 250px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.network-icon {
+  font-size: 100px;
   margin-bottom: 10px;
+}
 
-  .text-exNetwork2 {
-    font-size: 16px;
-    line-height: 2.6;
-    margin-top: 20px;
-  }
-
-  .network-img2 {
-    max-width: 30%;
-    height: auto;
-    margin-left: 30px;
-  }
-
-  .network-box-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
-  }
-
-  .network-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 250px;
-    border: 1px solid #333;
-    border-radius: 10px;
-    background-color: #f0f0f0;
-    text-align: center;
-    font-size: 14px;
-    color: #333;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-
-  .network-icon {
-    font-size: 100px;
-    margin-bottom: 10px;
-  }
-
-  .text-network-Title {
-    font-size: 20px;
-    font-weight: bolder;
-    margin: 0;
-  }
+.text-network-Title {
+  font-size: 20px;
+  font-weight: bolder;
+  margin: 0;
 }
