@@ -4,7 +4,7 @@ import Header from '../../../component/header/Header';
 import Footer from '../../../component/footer/Footer';
 import './AboutUs.css'
 import Image from 'next/image';
-import join from '../../../public/join.jpg';
+import ImgCoLtd from '../../../public/imgCoLtd.png'
 import { useTranslation } from 'react-i18next';
 import '../../../lib/i18n'
 
@@ -32,7 +32,7 @@ export default function AboutUs() {
       <div className='container-about'>
         <div className='content-about'>
           <div className='content-about-l'>
-            <Image src={join} alt='JOIN'></Image>
+            <Image src={ImgCoLtd } alt=''></Image>
           </div>
           <div className='content-about-r'>
             <h2 className='title-com'>{t('Company Information')}</h2>

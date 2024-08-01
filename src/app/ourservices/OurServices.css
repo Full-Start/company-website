@@ -144,13 +144,11 @@
     color: #c10000;
 }
 
-.project-line1-img img,
-.project-line2-img img,
-.project-line3-img img,
-.project-line4-img img {
-    width: 100%;
-    height: auto;
-}
+.project-line1-img img, .project-line2-img img, .project-line3-img img, .project-line4-img img {
+    max-width: 680px;
+    max-height: 500px;
+    object-fit: cover;
+  }
 
 .project-line1,
 .project-line2 {

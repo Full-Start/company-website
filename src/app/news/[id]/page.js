@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Header from '../../../../component/header/Header'
 import Footer from '../../../../component/footer/Footer'
 import Image from 'next/image'
-import client from '../../../../public/client.jpg'
+import EasyERP from '../../../../public/EasyERP.jpg'
 import facebook from '../../../../public/facebook.png'
 import twitter from '../../../../public/twitter.png'
 import linkedin from '../../../../public/linkedin.png'
@@ -64,19 +64,19 @@ function NewDetail({ params }) {
       <div className={`id1-container-wrapper ${layoutStyle}`}>
         <div className='id1-container'>
           <h3 className='id1-postTitle'>
-            {newData.title}
+            {t(newData.title)}
           </h3>
           <span className='id1-date'>{newData.date}</span>
           <Image src={newData.img} alt={newData.title} width={300} height={200} className='id1-img' />
           <h3 className='id1-postSubTitle'>
-            Subtitle
+            {t('Subtitle')}
           </h3>
           <h3 className='id1-postDesc'>
-            {newData.desc}
+            {t(newData.desc)}
           </h3>
 
           <div className="id1-links">
-            <h3>Share :</h3>
+            <h3>{t('Share :')}</h3>
             <div className="id1-socialmedia">
               <a
                 href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`}
@@ -116,21 +116,21 @@ function NewDetail({ params }) {
           <div className='menu-item'>
             <Link href="/about/newevents/laTestArticle1" className='menu-item'>
               <div className='menu-imgContainer'>
-                <Image src={client} alt="" className='menu-img' />
+                <Image src={EasyERP} alt="" className='menu-img' />
               </div>
               <div className='menu-textContainer'>
                 <h3 className='menu-postTitle'>
                   {t('Develop Application Data Asset to help work with accuracy and transparency in every step.')}
                 </h3>
                 <div className='menu-detail'>
-                  <span className='menu-username'>CEO TANG</span>
-                  <span className='menu-date'>10-03-2024</span>
+                  <span className='menu-username'>CEO KIT</span>
+                  <span className='menu-date'>31-07-2024</span>
                 </div>
               </div>
             </Link>
           </div>
 
-          <div className='menu-item'>
+          {/* <div className='menu-item'>
             <Link href="/about/newevents/laTestArticle2" className='menu-item'>
               <div className='menu-imgContainer'>
                 <Image src={client} alt="" className='menu-img' />
@@ -162,7 +162,7 @@ function NewDetail({ params }) {
                 </div>
               </div>
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
 

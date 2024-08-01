@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Header from '../../../../component/header/Header';
 import Footer from '../../../../component/footer/Footer';
 import Image from 'next/image';
-import client from '../../../../public/client.jpg';
+import EasyERP from '../../../../public/EasyERP.jpg'
 import Swal from 'sweetalert2';
 import './Newevents.css';
 import Link from 'next/link';
@@ -66,10 +66,10 @@ function Newevents() {
                                 <div className='news-textContainer'>
                                     <div className='news-date'>{val.date}</div>
                                     <Link href={`/news/${val._id}`} className='news-title'>
-                                        <h1 className='news-title'>{val.title}</h1>
+                                        <h1 className='news-title'>{t(val.title)}</h1>
                                     </Link>
                                     <p className='news-desc'>
-                                        {val.desc}
+                                        {t(val.desc)}
                                     </p>
                                     <Link href={`/news/${val._id}`} className='news-btn'>{t('Read More')}</Link>
                                 </div>
@@ -81,26 +81,26 @@ function Newevents() {
                 </div>
 
                 <div className='container-menu'>
-                    <h2 className='subtitle-menu'>{"We would like to present the news"}</h2>
+                    <h2 className='subtitle-menu'>{t("We would like to present the news")}</h2>
                     <h1 className='title-menu'>{t('Latest Articles')}</h1>
                     <div className='menu-item'>
                         <Link href="/about/newevents/laTestArticle1" className='menu-item'>
                             <div className='menu-imgContainer'>
-                                <Image src={client} alt="" className='menu-img' />
+                                <Image src={EasyERP} alt="" className='menu-img' />
                             </div>
                             <div className='menu-textContainer'>
                                 <h3 className='menu-postTitle'>
                                     {t('Develop Application Data Asset to help work with accuracy and transparency in every step.')}
                                 </h3>
                                 <div className='menu-detail'>
-                                    <span className='menu-username'>CEO TANG</span>
-                                    <span className='menu-date'>10-03-2024</span>
+                                    <span className='menu-username'>CEO KIT</span>
+                                    <span className='menu-date'>31-07-2024</span>
                                 </div>
                             </div>
                         </Link>
                     </div>
 
-                    <div className='menu-item'>
+                    {/* <div className='menu-item'>
                         <Link href="/about/newevents/laTestArticle2" className='menu-item'>
                             <div className='menu-imgContainer'>
                                 <Image src={client} alt="" className='menu-img' />
@@ -115,9 +115,9 @@ function Newevents() {
                                 </div>
                             </div>
                         </Link>
-                    </div>
+                    </div> */}
 
-                    <div className='menu-item'>
+                    {/* <div className='menu-item'>
                         <Link href="/about/newevents/laTestArticle3" className='menu-item'>
                             <div className='menu-imgContainer'>
                                 <Image src={client} alt="" className='menu-img' />
@@ -132,7 +132,7 @@ function Newevents() {
                                 </div>
                             </div>
                         </Link>
-                    </div>
+                    </div> */}
 
                 </div>
             </div>

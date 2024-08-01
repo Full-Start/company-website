@@ -45,15 +45,15 @@
 .box__desc , .box__desc-r , .box__desc-l{
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* จัดย่อหน้าให้เริ่มต้นตรงกัน */
+  align-items: flex-start; 
   font-size: large;
 }
 
 .box__desc , .box__desc-r p, .box__desc-l p{
-  text-indent: 2em; /* ย่อหน้า */
-  margin: 0 0 1em 0; /* ลบ margin ด้านข้าง และตั้งค่า margin-bottom */
-  line-height: 1.8; /* ตั้งค่าระยะห่างระหว่างบรรทัด */
-  width: 100%; /* ตั้งค่าความกว้างให้ย่อหน้าสม่ำเสมอ */
+  text-indent: 2em; 
+  margin: 0 0 1em 0; 
+  line-height: 1.8;
+  width: 100%; 
 }
 
 
@@ -69,7 +69,8 @@
 }
 
 .box__desc,
-.box__desc-l{
+.box__desc-l,
+.box__desc-r {
   font-size: large;
   line-height: 1.6;
   text-align: center;
@@ -104,10 +105,10 @@
 }
 
 .box-img-l img {
-  width: 80%;
+  width: 70%;
   height: 50%;
   object-fit: cover;
-  margin-left: 40px;
+  margin-left: 50px;
 }
 
 .box-img-r img {
@@ -175,7 +176,7 @@
 .horizontal-line-r {
   width: 130px;
   border-top: 4px solid #ed7e00;
-  margin-left: 1210px;
+  margin-left: 1205px;
   margin-top: 175px;
 }
 
@@ -201,7 +202,7 @@
 
 .swiper_container {
   width: 100%;
-  height: auto; /* ปรับขนาดตามเนื้อหาจริง */
+  height: auto; 
   position: relative;
   margin-top: -270px;
 }
@@ -217,7 +218,7 @@
 .swiper-slide img {
   width: 100%;
   height: auto;
-  object-fit: contain; /* รักษาอัตราส่วนของรูปภาพ */
+  object-fit: contain;
 }
 
 .swiper-pagination {
@@ -233,7 +234,7 @@
 }
 
 .swiper-button-prev, .swiper-button-next {
-  margin: 0 10px; /* ปรับระยะห่างของปุ่ม */
+  margin: 0 10px; 
 }
 
 .content-con{
@@ -250,7 +251,6 @@
 padding: 2rem;
 text-align: left;
 }
-
 
 .menu li {
   padding-right: 2rem;

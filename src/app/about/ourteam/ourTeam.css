@@ -82,7 +82,7 @@
 .peeKit-img {
   margin-right: 20px;
   width: 500px;
-  height: 400px;
+  height: 500px;
   margin-left: 100px;
   margin-top: 80px;
   position: relative;
@@ -126,7 +126,7 @@
 .peeTerk-img {
   margin-right: 20px;
   width: 500px;
-  height: 400px;
+  height: 500px;
   margin-left: 100px;
   margin-top: 80px;
   position: relative;
@@ -135,7 +135,7 @@
 .peeTerk-text {
   display: flex;
   flex-direction: column;
-  margin-top: 150px;
+  margin-top: 250px;
 }
 
 .horizontal-line-peeTerk {

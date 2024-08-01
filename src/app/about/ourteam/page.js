@@ -3,8 +3,8 @@ import React from "react";
 import Header from '../../../../component/header/Header'
 import Footer from '../../../../component/footer/Footer'
 import './ourTeam.css'
-import peeKit from '../../../../public/peeKit.png'
-import peeTerk from '../../../../public/peeTerk.png'
+import Pkit from '../../../../public/Pkit.png'
+import Pterk from '../../../../public/Pterk.png'
 import allTeam from '../../../../public/allTeam.png'
 import Image from 'next/image'
 import { SiMinetest } from "react-icons/si";
@@ -30,28 +30,24 @@ const OurTeam = () => {
                 {t('Computer Software & Hardware, Internet of Thing (IoT) who are confident in being able to help solve problems. and take care of various systems .')}</p>
 
             <div className='peeKit'>
-                <Image src={peeKit} alt='' className='peeKit-img' />
+                <Image src={Pkit} alt='' className='peeKit-img' />
                 <div className="peeKit-text">
                     <p className="peeKit-title">{t('Mr.Kitti Washirasuttanan (Kit)')}</p>
                     <p className="peeKit-subTitle">{t('Founder / CEO')}</p>
                     <p className="peeKit-desc">
-                        ssdf ghrth h fgfwer h rtjhr uj qwer wfd rdfhrthrth dfdfb erfge geg eg eg ert jbeg
-                        wwe wbfg htyjytjerggdfvdfb dfbv dfhrth rthrthbvdfb erg hj tyjtyj sdfcvey5u56ubr hr5th 56ufgb rjtj
-                        tj5j7jj asd f wefg wfsd wef wefw efsdvsdveg erth werhgef fwef we fwgferhthergfv dvergwergferg
+                        {t('The CEO, or Chief Executive Officer, is the highest-ranking executive in an organization. The CEO is responsible for making important decisions and setting the overall direction and strategy of the organization.')}
                     </p>
                     <div className="horizontal-line-peeKit"></div>
                 </div>
             </div>
 
             <div className='peeTerk'>
-                <Image src={peeTerk} alt='' className='peeTerk-img' />
+                <Image src={Pterk} alt='' className='peeTerk-img' />
                 <div className="peeTerk-text">
                     <p className="peeTerk-title">{t('Mr.Chatawat Lekkla (Terk)')}</p>
                     <p className="peeTerk-subTitle">{t('Head of Software Deverlopment')}</p>
                     <p className="peeTerk-desc">
-                        ssdf ghrth h fgfwer h rtjhr uj qwer wfd rdfhrthrth dfdfb erfge geg eg eg ert jbeg
-                        wwe wbfg htyjytjerggdfvdfb dfbv dfhrth rthrthbvdfb erg hj tyjtyj sdfcvey5u56ubr hr5th 56ufgb rjtj
-                        tj5j7jj asd f wefg wfsd wef wefw efsdvsdveg erth werhgef fwef we fwgferhthergfv dvergwergferg
+                    {t('A specialist in design and development planning, with a focus on programming using a specific programming language, as well as project management and feature design for the company.')}
                     </p>
                 </div>
             </div>

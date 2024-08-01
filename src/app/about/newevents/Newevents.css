@@ -105,6 +105,7 @@
 .news-desc {
   font-size: small;
   font-weight: 600;
+  line-height: 2;
 }
 
 .news-btn {

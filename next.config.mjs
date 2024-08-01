@@ -6,6 +6,7 @@ const nextConfig = {
     domains: [
       'www.ca-decor.com',
       'picsum.photos',
+      'fastly.4sqi.net',
     ],
   },
   i18n: {

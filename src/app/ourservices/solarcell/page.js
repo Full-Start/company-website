@@ -5,7 +5,11 @@ import Footer from '../../../../component/footer/Footer'
 import Image from 'next/image'
 import './solarcell.css'
 import Link from 'next/link'
-import client from '../../../../public/client.jpg'
+import bgSmartLogger from '../../../../public/bgSmartLogger.jpg'
+import exModel from '../../../../public/exModel.png'
+import picModel from '../../../../public/picModel.png'
+import bgwork from '../../../../public/bgwork.jpg'
+import EasyERP from '../../../../public/EasyERP.jpg'
 import ExSolarCell from '../../../../public/exsolarcell.png'
 import PvSolar1 from '../../../../public/pvsolar1.png'
 import PvSolar2 from '../../../../public/pvsolar2.png'
@@ -72,7 +76,7 @@ const DevSoft = () => {
 
 
             <div className="devSoft-content">
-                <Image className="devSoft-img" src={client} alt='Client Image' />
+                <Image className="devSoft-img" src={bgwork} alt='Client Image' />
                 <div className="devSoft-text">
                     <div className="devSoft-text-content">{t('Why Should You Choose FullStart?')}</div>
                     <div className="devSoft-text-desc">
@@ -87,12 +91,8 @@ const DevSoft = () => {
             </div>
 
 
-            <div className="horizontal-line-product-container"></div>
+
             <div className="product1-container">
-                <div className="product1-header">
-                    <div className="product1-title">{t('Product')}</div>
-                </div>
-                <div className="horizontal-line-title-product"></div>
                 <div className="product1-item-wrapper">
                     <div className="product1-item" >
                         <span className="product1-item-number">1</span>
@@ -138,13 +138,7 @@ const DevSoft = () => {
                 </div>
             </div>
 
-
-            <div className="horizontal-line-product-container"></div>
             <div className="product2-container">
-                <div className="product2-header">
-                    <div className="product2-title">{t('Product')}</div>
-                </div>
-                <div className="horizontal-line-title-product"></div>
                 <div className="product2-item-wrapper">
                     <div className="product2-item" >
                         <span className="product2-item-number">{t('2')}</span>
@@ -165,35 +159,44 @@ const DevSoft = () => {
             <Image className="pvSolar2-img" src={PvSolar1} alt='' ></Image>
 
 
-            <div className="horizontal-line-product-container"></div>
             <div className="product3-container">
-                <div className="product3-header">
-                    <div className="product3-title">{t('Product')}</div>
-                </div>
-                <div className="horizontal-line-title-product"></div>
                 <div className="product3-item-wrapper">
-                    <div className="product3-item" >
+                    <div className="product3-item">
                         <span className="product2-item-number">{t('3')}</span>
                     </div>
-                    <div className="product3-description-bg" >
+                    <div className="product3-description-bg">
                         <span className="product3-description">{t('FullStart Smart Logger')}</span>
                     </div>
                 </div>
-            </div>
-            <div className="product3-subTitle">
-                {t('It is a device that helps promote the operation of the solar power generation system by collecting data')}
-                {t('from various devices to be used in analyzing problems during each working period. It also has a screen to')}
-                {t('display the working results at that time, allowing the staff to easily look at the overall production value')}
-                {t('without having to go through each device. It helps to work more conveniently and quickly, and can also add')}
-                {t('more controls than other smart lockers.')}
-            </div>
-
-
-            <div className="horizontal-line-product-container"></div>
-            <div className="product4-container">
-                <div className="product4-header">
-                    <div className="product4-title">{t('Product')}</div>
+                <Image className="product3-img" src={bgSmartLogger} alt=''></Image>
+                <div className="text-smartLogger">
+                    <span>FullStart</span>
+                    <span className="smartLogger">Smart Logger</span>
                 </div>
+                <div className="product3-content">
+                    <div className="product3-subTitle">
+                        <div className="bold-text">{t('It is a device that helps promote the operation of the solar power generation system')}</div>
+                        <br />
+                        {t('from various devices to be used in analyzing problems during each working period. It also has a screen to')}
+                        <br />
+                        {t('display the working results at that time, allowing the staff to easily look at the overall production value')}
+                        <br />
+                        {t('without having to go through each device. It helps to work more conveniently and quickly, and can also add')}
+                        <br />
+                        {t('more controls than other smart lockers.')}
+                    </div>
+                    <Image className="picModel" src={picModel} alt=''></Image>
+                </div>
+                <div className="text-side">
+                    <div className="front">{t('FRONT')}</div>
+                    <div className="behide">{t('BEHIDE')}</div>
+                    <div className="side">{t('SIDE')}</div>
+                    <div className="top">{t('TOP')}</div>
+                </div>
+                <Image className="exModel" src={exModel} alt='' ></Image>
+            </div>
+
+            <div className="product4-container">
                 <div className="horizontal-line-title-product"></div>
                 <div className="product4-item-wrapper">
                     <div className="product4-item" >
@@ -203,6 +206,7 @@ const DevSoft = () => {
                         <span className="product4-description">{t('Application Data Asset')}</span>
                     </div>
                 </div>
+                <Image className="easyErp" src={EasyERP} alt=''></Image>
             </div>
             <div className="product4-subTitle">
                 {t('Application Data Asset This system has been developed to address current operational issues in industrial plants and the buying and selling of products.')}
@@ -213,11 +217,7 @@ const DevSoft = () => {
 
 
 
-            <div className="horizontal-line-product-container"></div>
             <div className="product5-container">
-                <div className="product5-header">
-                    <div className="product5-title">{t('Product')}</div>
-                </div>
                 <div className="horizontal-line-title-product"></div>
                 <div className="product5-item-wrapper">
                     <div className="product5-item" >
@@ -227,13 +227,13 @@ const DevSoft = () => {
                         <span className="product5-description">{t('ERP System')}</span>
                     </div>
                 </div>
+                <Image className="erpSystem-img" src={ERPSystem} alt='' ></Image>
             </div>
             <div className="product5-subTitle">
                 <em>{t('This software system helps manage organizational resources more efficiently')}</em> {t('by connecting various departments within the organization,')}
                 {t('such as human resources, accounting, production, sales, and others. It enables effective management of these resources, saving time and reducing complex processes.')}
                 {t('The system features organized data storage, allows for shared data usage across the organization, and ensures high security.')}
             </div>
-            <Image className="erpSystem-img" src={ERPSystem} alt='' ></Image>
 
 
 

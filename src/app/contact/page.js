@@ -7,6 +7,7 @@ import { GrMapLocation, GrPhone } from "react-icons/gr";
 import Swal from 'sweetalert2';
 import { useTranslation } from 'react-i18next';
 import '../../../lib/i18n'
+import Link from 'next/link'
 
 function Contact() {
   const { t } = useTranslation();
@@ -15,16 +16,17 @@ function Contact() {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
+  const [termsChecked, setTermsChecked] = useState(false);
+  const [error, setError] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     if (!name || !company || !email || !phone || !message) {
-      Swal.fire({
-        icon: 'warning',
-        title: 'Incomplete Information',
-        text: 'Please complete all inputs'
-      });
+      setError('All fields are required.');
+      return;
+    }
+    if (!termsChecked) {
+      setError('You must accept the Terms of Use and Privacy Policy.');
       return;
     }
 
@@ -43,8 +45,17 @@ function Contact() {
           title: 'Success',
           text: 'We have received your information.'
         }).then(() => {
+          // Reset form fields
+          setName('');
+          setCompany('');
+          setEmail('');
+          setPhone('');
+          setMessage('');
+          setTermsChecked(false);
+          setError('');
 
-          router.push("/");
+          // Redirect or any other action
+          // router.push("/");
         });
       } else {
         throw new Error("Failed to submit information");
@@ -57,7 +68,7 @@ function Contact() {
       });
       console.log(error);
     }
-  }
+  };
 
   return (
     <>
@@ -97,6 +108,21 @@ function Contact() {
             <label htmlFor='message'>{t('Your Message *')}</label>
             <textarea value={message} onChange={(e) => setMessage(e.target.value)} id='message' name='message' required placeholder={t('Enter your message')}></textarea>
           </div>
+          <div className='terms-checkbox'>
+            <input type='checkbox' id='terms' checked={termsChecked} onChange={(e) => setTermsChecked(e.target.checked)} />
+            <label htmlFor='terms'>
+              I accept the
+              <Link href="/terms-privacy">
+                <div className='terms-link'> Terms of Use </div>
+              </Link>
+              and
+              <Link href="/terms-privacy">
+                <div className='privacy-link'> Privacy Policy</div>
+              </Link>
+              *
+            </label>
+          </div>
+          {error && <p className='error-message'>{error}</p>}
           <button type='submit' className='submit-btn'>{t('Submit')}</button>
         </form>
       </div>
@@ -131,13 +157,12 @@ function Contact() {
 
       <div className='map-section'>
         <div className='gmap-frame'>
-          <iframe className='map' width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=en&amp;q=998/20%20%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%8810%20%E0%B8%95%E0%B8%B3%E0%B8%9A%E0%B8%A5%20%E0%B9%83%E0%B8%99%E0%B8%84%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%9B%E0%B8%A5%E0%B8%B2%E0%B8%81%E0%B8%94%20%E0%B8%AD%E0%B8%B3%E0%B9%80%E0%B8%A0%E0%B8%AD%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%AA%E0%B8%A1%E0%B8%B8%E0%B8%97%E0%B8%A3%E0%B9%80%E0%B8%88%E0%B8%AD%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B9%8C%20%E0%B8%88.%E0%B8%AA%E0%B8%A1%E0%B8%B8%E0%B8%97%E0%B8%A3%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A3%20%2010290+(FulStart%20Co.Ltd,)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps trackers</a></iframe>
+          <iframe className='map' width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=en&amp;q=998/20%20%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%8810%20%E0%B8%95%E0%B8%B3%E0%B8%9A%E0%B8%A5%20%E0%B9%83%E0%B8%99%E0%B8%84%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%9B%E0%B8%A5%E0%B8%B2%E0%B8%81%E0%B8%94%20%E0%B8%AD%E0%B8%B3%E0%B9%80%E0%B8%A0%E0%B8%AD%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%AA%E0%B8%A1%E0%B8%B8%E0%B8%97%E0%B8%A3%E0%B9%80%E0%B8%88%E0%B8%AD%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B9%8C%20%E0%B8%88.%E0%B8%AA%E0%B8%A1%E0%B8%B8%E0%B8%97%E0%B8%A3%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A3%20%2010290+(FulStart%20Co.Ltd,)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
         </div>
       </div>
-
       <Footer />
     </>
   );
-};
+}
 
 export default Contact;

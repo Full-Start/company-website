@@ -3,7 +3,9 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Link from 'next/link';
 import Image from 'next/image';
-import client from '../../public/client.jpg'
+import service from '../../public/service.jpg'
+import customer from '../../public/customer.png'
+import fullStart from '../../public/fullstart.png'
 import "./Content.css"
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
@@ -50,7 +52,7 @@ export default function Content () {
                 <div className='box'>
                     <div className='box-title'>{t('Our Services')}</div>
                     <div className='box-img'>
-                        <Image src={client} alt='' />
+                        <Image src={service} alt='' />
                     </div>
                     <div className='box__desc'>
                         <p>{t('In the work of the FULLSTART team that is attentive Enthusiastic and ready to serve all the time. Follow up on work that can happen.')}</p>
@@ -62,7 +64,7 @@ export default function Content () {
                 <div className='box-l'>
                     <div className='box-title-l'>{t('Our Customer')}</div>
                     <div className='box-img-l'>
-                        <Image src={client} alt='' />
+                        <Image src={customer} alt='' />
                     </div>
                     <div className='box__desc-l'>
                         <p>{t('We have had the opportunity to work with many knowledgeable people. and responds to customers very well')}</p>
@@ -77,7 +79,7 @@ export default function Content () {
                         <p>{t('FULLSTART - We are confident that we can help solve problems in computer technology , IoT , industrial machinery , installation , and maintenance of solar power generation.')}</p>
                     </div>
                     <div className='box-img-r'>
-                        <Image src={client} alt='' />
+                        <Image src={fullStart} alt='' />
                     </div>
                     <div className='box__btn-r'>
                     <Link href='/about' onClick={() => handleLinkClick('/about')} className='box-view-r'>{t('ABOUT US')}</Link>
@@ -190,19 +192,6 @@ export default function Content () {
                         <div className="swiper-pagination"></div>
                     </div>
                 </Swiper>
-            </div>
-            <div className='container'>
-                <section className='content-con'>
-                    <div className='content-l'>
-                        <img src='/join.jpg' alt='JOIN'></img>
-                    </div>
-                    <div className='content-r'>
-                        <h2>Some Title</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt</p>
-                        <Link href='/contact' onClick={() => handleLinkClick('/contact')} className='btn-join'>{t('Join Us')}</Link>
-                    </div>
-
-                </section>
             </div>
         </div>
 
