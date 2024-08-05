@@ -45,7 +45,6 @@ function Contact() {
           title: 'Success',
           text: 'We have received your information.'
         }).then(() => {
-          // Reset form fields
           setName('');
           setCompany('');
           setEmail('');
@@ -53,9 +52,6 @@ function Contact() {
           setMessage('');
           setTermsChecked(false);
           setError('');
-
-          // Redirect or any other action
-          // router.push("/");
         });
       } else {
         throw new Error("Failed to submit information");

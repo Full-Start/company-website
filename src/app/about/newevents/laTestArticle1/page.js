@@ -4,7 +4,6 @@ import Header from '../../../../../component/header/Header';
 import Footer from '../../../../../component/footer/Footer';
 import Image from 'next/image';
 import EasyERP from '../../../../../public/EasyERP.jpg';
-import Swal from 'sweetalert2';
 import './laTestArticle1.css';
 import Link from 'next/link';
 import facebook from '../../../../../public/facebook.png'
