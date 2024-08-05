@@ -6,8 +6,8 @@ import './Contact.css';
 import { GrMapLocation, GrPhone } from "react-icons/gr";
 import Swal from 'sweetalert2';
 import { useTranslation } from 'react-i18next';
-import '../../../lib/i18n'
-import Link from 'next/link'
+import '../../../lib/i18n';
+import Link from 'next/link';
 
 function Contact() {
   const { t } = useTranslation();
@@ -153,7 +153,16 @@ function Contact() {
 
       <div className='map-section'>
         <div className='gmap-frame'>
-          <iframe className='map' width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=en&amp;q=998/20%20%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%8810%20%E0%B8%95%E0%B8%B3%E0%B8%9A%E0%B8%A5%20%E0%B9%83%E0%B8%99%E0%B8%84%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%9B%E0%B8%A5%E0%B8%B2%E0%B8%81%E0%B8%94%20%E0%B8%AD%E0%B8%B3%E0%B9%80%E0%B8%A0%E0%B8%AD%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%AA%E0%B8%A1%E0%B8%B8%E0%B8%97%E0%B8%A3%E0%B9%80%E0%B8%88%E0%B8%AD%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B9%8C%20%E0%B8%88.%E0%B8%AA%E0%B8%A1%E0%B8%B8%E0%B8%97%E0%B8%A3%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A3%20%2010290+(FulStart%20Co.Ltd,)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+          <iframe 
+            className='map' 
+            width="100%" 
+            height="500" 
+            frameBorder="0" 
+            scrolling="no" 
+            marginHeight="0" 
+            marginWidth="0" 
+            src="https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=en&amp;q=998/20%20%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%8810%20%E0%B8%95%E0%B8%B3%E0%B8%9A%E0%B8%A5%20%E0%B9%83%E0%B8%99%E0%B8%84%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%9B%E0%B8%A5%E0%B8%B2%E0%B8%81%E0%B8%94%20%E0%B8%AD%E0%B8%B3%E0%B9%80%E0%B8%A0%E0%B8%AD%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%AA%E0%B8%A1%E0%B8%B8%E0%B8%97%E0%B8%A3%E0%B9%80%E0%B8%88%E0%B8%AD%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B9%8C%20%E0%B8%88.%E0%B8%AA%E0%B8%A1%E0%B8%B8%E0%B8%97%E0%B8%A3%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A3%20%2010290+(FulStart%20Co.Ltd,)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+          </iframe>
         </div>
       </div>
       <Footer />

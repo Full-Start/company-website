@@ -3,6 +3,8 @@ import React from "react";
 import Header from "../../../../component/header/Header"
 import Footer from '../../../../component/footer/Footer'
 import Image from 'next/image'
+import exSystem from '../../../../public/exSystem.png'
+import exNetwork2 from '../../../../public/exNetwork2.png'
 import './networksystem.css'
 import Link from 'next/link'
 import { GrSystem } from "react-icons/gr";
@@ -11,8 +13,6 @@ import { GiFirewall } from "react-icons/gi";
 import { SiEnvoyproxy } from "react-icons/si";
 import { LuComputer } from "react-icons/lu";
 import { MdOutlineVpnLock } from "react-icons/md";
-import exSystem from '../../../../public/exSystem.png'
-import exNetwork2 from '../../../../public/exNetwork2.png'
 import { useTranslation } from 'react-i18next';
 import '../../../../lib/i18n'
 
