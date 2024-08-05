@@ -7,6 +7,7 @@ const nextConfig = {
       'www.ca-decor.com',
       'picsum.photos',
       'fastly.4sqi.net',
+      'images.remotePatterns'
     ],
   },
   i18n: {

@@ -1,5 +1,5 @@
-'use client';
-import React from 'react';
+"use client";
+import React, { useEffect, useState } from 'react';
 import Header from '../../../../../component/header/Header';
 import Footer from '../../../../../component/footer/Footer';
 import Image from 'next/image';
@@ -15,15 +15,18 @@ import '../../../../../lib/i18n'
 
 
 function LaTestArticle1() {
-  
   const { t } = useTranslation();
+  const [currentUrl, setCurrentUrl] = useState('');
+
+  useEffect(() => {
+    setCurrentUrl(window.location.href);
+  }, []);
 
   return (
     <>
       <Header />
       <div className='laTestArticle1-container-wrapper'>
         <div className='laTestArticle1-container'>
-
           <h3 className='laTestArticle1-postTitle'>
             {t('Develop Application Data Asset to help work with accuracy and transparency in every step.')}
           </h3>
@@ -53,18 +56,22 @@ function LaTestArticle1() {
           <div className="laTestArticle1-links">
             <h3>{t('Share')} :</h3>
             <div className="laTestArticle1-socialmedia">
-              <a href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`} target="_blank" rel="noopener noreferrer">
-                <Image src={facebook} alt="Share on Facebook" />
-              </a>
-              <a href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(window.location.href)}&text=Check%20out%20this%20article`} target="_blank" rel="noopener noreferrer">
-                <Image src={twitter} alt="Share on Twitter" />
-              </a>
-              <a href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`} target="_blank" rel="noopener noreferrer">
-                <Image src={linkedin} alt="Share on LinkedIn" />
-              </a>
-              <a href={`https://www.instagram.com`} target="_blank" rel="noopener noreferrer">
-                <Image src={instagram} alt="Share on Instagram" />
-              </a>
+              {currentUrl && (
+                <>
+                  <a href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`} target="_blank" rel="noopener noreferrer">
+                    <Image src={facebook} alt="Share on Facebook" />
+                  </a>
+                  <a href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(currentUrl)}&text=Check%20out%20this%20article`} target="_blank" rel="noopener noreferrer">
+                    <Image src={twitter} alt="Share on Twitter" />
+                  </a>
+                  <a href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(currentUrl)}`} target="_blank" rel="noopener noreferrer">
+                    <Image src={linkedin} alt="Share on LinkedIn" />
+                  </a>
+                  <a href={`https://www.instagram.com`} target="_blank" rel="noopener noreferrer">
+                    <Image src={instagram} alt="Share on Instagram" />
+                  </a>
+                </>
+              )}
             </div>
           </div>
         </div>
