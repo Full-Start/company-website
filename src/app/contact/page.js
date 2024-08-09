@@ -77,6 +77,7 @@ function Contact() {
       </div>
       <div className='contact-us'>{t('Send us a message')}</div>
       <div className='contact-get'>{t('Get In Touch')}</div>
+      <div className='contact-time'>{t('Time to take a step towards your goal.')}</div>
 
       <div className='form-container'>
         <form onSubmit={handleSubmit}>
@@ -107,13 +108,13 @@ function Contact() {
           <div className='terms-checkbox'>
             <input type='checkbox' id='terms' checked={termsChecked} onChange={(e) => setTermsChecked(e.target.checked)} />
             <label htmlFor='terms'>
-              I accept the
+              {t('I accept the')}
               <Link href="/terms-privacy">
-                <div className='terms-link'> Terms of Use </div>
+                <div className='terms-link'>{t('Terms of Use')}</div>
               </Link>
-              and
+              {t('and')}
               <Link href="/terms-privacy">
-                <div className='privacy-link'> Privacy Policy</div>
+                <div className='privacy-link'>{t('Privacy Policy')}</div>
               </Link>
               *
             </label>

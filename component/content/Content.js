@@ -1,11 +1,14 @@
 "use client";
-import React from 'react';
+import React ,{useEffect} from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Link from 'next/link';
 import Image from 'next/image';
 import service from '../../public/service.jpg'
 import customer from '../../public/customer.png'
 import fullStart from '../../public/fullstart.png'
+import defaultImage from '../../public/default-image.png'
+import bgCareer from '../../public/bg-career.png'
+import picCareer from '../../public/pic-career.png'
 import "./Content.css"
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
@@ -33,18 +36,42 @@ import slide_image_18 from '../../public/img_18.png';
 import slide_image_19 from '../../public/img_19.png';
 import slide_image_20 from '../../public/img_20.png';
 import slide_image_21 from '../../public/img_21.png';
-import { useTranslation } from 'react-i18next'; 
+import { useTranslation } from 'react-i18next';
 import '../../lib/i18n'
 
 
-export default function Content () {
+export default function Content() {
 
-    const { t } = useTranslation(); 
+    const { t } = useTranslation();
 
     const handleLinkClick = (path) => {
         router.push(path);
         closeMobileMenu();
     };
+    useEffect(() => {
+        const careerContainer = document.querySelector('.career-container');
+
+        if (!careerContainer) {
+            return;
+        }
+
+        const handleScroll = () => {
+            const rect = careerContainer.getBoundingClientRect();
+            const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+
+            if (isVisible) {
+                careerContainer.classList.add('visible');
+                window.removeEventListener('scroll', handleScroll);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        handleScroll(); 
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     return (
         <div>
@@ -58,7 +85,7 @@ export default function Content () {
                         <p>{t('In the work of the FULLSTART team that is attentive Enthusiastic and ready to serve all the time. Follow up on work that can happen.')}</p>
                     </div>
                     <div className='box__btn'>
-                       <Link href='/ourservices' onClick={() => handleLinkClick('/ourservices')} className='box-view'>{t('View More')}</Link>
+                        <Link href='/ourservices' onClick={() => handleLinkClick('/ourservices')} className='box-view'>{t('View More')}</Link>
                     </div>
                 </div>
                 <div className='box-l'>
@@ -70,7 +97,7 @@ export default function Content () {
                         <p>{t('We have had the opportunity to work with many knowledgeable people. and responds to customers very well')}</p>
                     </div>
                     <div className='box__btn-l'>
-                    <Link href='/reference/customers' onClick={() => handleLinkClick('/reference/customers')} className='box-view-l'>{t('View More')}</Link>
+                        <Link href='/reference/customers' onClick={() => handleLinkClick('/reference/customers')} className='box-view-l'>{t('View More')}</Link>
                     </div>
                 </div>
                 <div className='box-r'>
@@ -82,7 +109,7 @@ export default function Content () {
                         <Image src={fullStart} alt='' />
                     </div>
                     <div className='box__btn-r'>
-                    <Link href='/about' onClick={() => handleLinkClick('/about')} className='box-view-r'>{t('ABOUT US')}</Link>
+                        <Link href='/about' onClick={() => handleLinkClick('/about')} className='box-view-r'>{t('ABOUT US')}</Link>
                     </div>
                 </div>
             </div>
@@ -193,8 +220,33 @@ export default function Content () {
                     </div>
                 </Swiper>
             </div>
-        </div>
 
+            <div className='career-container'>
+                <Image className='bg-career' src={bgCareer} alt=""></Image>
+                <Image className='pic-career' src={picCareer} alt=""></Image>
+                <div className='text-career'>
+                    <div className='career-title'>#FULLSTARTCAREER</div>
+                    <div className='career-subTitle'>{t('Contact Us')}</div>
+                    <Link href='/contact' onClick={() => handleLinkClick('/contact')} className='box-view-career'>{t('JOIN US')}</Link>
+                </div>
+            </div>
+
+            <div className='text-gallery'>{t('FullStart Gallery')}</div>
+            <div className="horizontal-line-gallery"></div>
+            <div className='gallery-container'>
+                <div className='gallery-image'>
+                    <Image src={defaultImage} alt=""></Image>
+                    <Image src={defaultImage} alt=""></Image>
+                    <Image src={defaultImage} alt=""></Image>
+                    <Image src={defaultImage} alt=""></Image>
+                    <Image src={defaultImage} alt=""></Image>
+                    <Image src={defaultImage} alt=""></Image>
+                    <Image src={defaultImage} alt=""></Image>
+                    <Image src={defaultImage} alt=""></Image>
+                    <Image src={defaultImage} alt=""></Image>
+                </div>
+            </div>
+        </div>
     );
 }
 

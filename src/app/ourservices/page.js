@@ -9,7 +9,6 @@ import IoT from '../../../public/IoT.jpg'
 import Solar from '../../../public/Solar-Panels.jpg'
 import network from '../../../public/networkcom.png'
 import software from '../../../public/softwareDev.jpg'
-import client from '../../../public/client.jpg'
 import { useTranslation } from 'react-i18next';
 import '../../../lib/i18n'
 

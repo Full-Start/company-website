@@ -292,5 +292,11 @@
   "Install a Firewall":"ติดตั้งไฟร์วอลล์",
   "Install a proxy service":"ติดตั้งบริการพร็อกซี",
   "Install load balancing , load sharing":"ติดตั้งโหลดบาลานซ์ , โหลดแชร์",
-  "Install site-to-site VPN , client-to-site VPN":"ติดตั้ง VPN แบบ site-to-site, client-to-site VPN"
+  "Install site-to-site VPN , client-to-site VPN":"ติดตั้ง VPN แบบ site-to-site, client-to-site VPN",
+  "FullStart Gallery":"แกลเลอรี่ฟูลสตาร์ท",
+  "We serve clients better with partnership.":"เราให้บิรการลูกค้าได้ดีขึ้นด้วยความร่วมมือเรา",
+  "Time to take a step towards your goal.":"ถึงเวลาที่จะก้าวไปสู่เป้าหมายของคุณแล้ว",
+  "I accept the":"ฉันยอมรับ",
+  "Terms of Use":"เงื่อนไขการใช้งาน",
+  "and":"และ"
 }

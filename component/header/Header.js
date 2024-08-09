@@ -138,6 +138,35 @@ export default function Header() {
         }
     }, [i18n]);
 
+
+    /* ป้องการการกด DROPDOWN MOBILE ที่ผิดปกติ*/
+    document.querySelectorAll('.dropdown-container').forEach(function (dropdown) {
+        let clickTimeout;
+
+        dropdown.addEventListener('click', function (event) {
+            event.preventDefault();
+
+            if (clickTimeout) {
+                clearTimeout(clickTimeout);
+                clickTimeout = null;
+
+                // นำไปสู่ลิงก์ของ item ที่ถูกกดใน dropdown
+                const link = event.target.closest('a');
+                if (link) {
+                    window.location.href = link.href;
+                }
+            } else {
+                this.classList.toggle('active');
+
+                clickTimeout = setTimeout(() => {
+                    clickTimeout = null;
+                }, 300);
+            }
+        });
+    });
+
+
+
     return (
         <div className='header'>
             <div className='container'>

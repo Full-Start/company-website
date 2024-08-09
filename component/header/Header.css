@@ -117,6 +117,7 @@
 
 .dropdown-container {
     position: relative;
+    cursor: pointer;
 }
 
 .dropdown-header {
@@ -218,7 +219,20 @@
     color: #000;
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 1200px) {
+    body {
+        zoom: 0.8; 
+    }
+}
+
+@media (max-width: 1000px) {
+    body {
+        zoom: 0.7; 
+    }
+}
+
+
+/* @media screen and (max-width: 480px) {
     .logo {
         position: absolute;
         top: -80px;
@@ -350,12 +364,6 @@
 
 } 
 
-
-
-
-
-/* Footer */
-
 .section__padding {
     padding: 4rem 4rem;
  }
@@ -459,10 +467,10 @@
    height: 35px;
    display: flex;
    align-items: center;
- }
+ } */
 
 
- 
+/*  
 
  @media screen and (max-width:850px) {
     .sb__footer-heading h1 {
@@ -506,4 +514,4 @@
        font-size: 27px;
        line-height: 38px
     }
- }
+ } */
